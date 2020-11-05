@@ -1,3 +1,17 @@
-<h2>Tic Tac Toe</h2>
-<app-square></app-square>
-<router-outlet></router-outlet>
+<nb-layout>
+  <nb-layout-header fixed>
+    <!-- Insert header here -->
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <div class="container">
+      <h2 class="title">Tic Tac Toe</h2>
+      <app-board></app-board>
+    </div>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    <!-- Insert footer here -->
+  </nb-layout-footer>
+</nb-layout>

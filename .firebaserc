@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tic-tac-toe-12aad": {
+      "hosting": {
+        "second-app": [
+          "tic-tac-toe-12aad"
+        ]
+      }
+    }
+  }
+}

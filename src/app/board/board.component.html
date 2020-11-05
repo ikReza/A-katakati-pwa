@@ -1,1 +1,25 @@
-<p>board works!</p>
+<div class="board-container">
+  <div class="play-info">
+    <ng-template [ngIf]="!winner" [ngIfElse]="ifWin">
+      Current Player: {{ player }}
+    </ng-template>
+
+    <ng-template #ifWin>
+      Winner: Player <span class="won">{{ winner }}</span> ! 😀
+    </ng-template>
+  </div>
+
+  <main>
+    <app-square
+      *ngFor="let val of squares; let i = index"
+      [value]="val"
+      (click)="makeMove(i)"
+      [isDisabled]="isDisabled"
+    >
+    </app-square>
+  </main>
+
+  <button nbButton outline status="danger" (click)="newGame()">
+    Start New Game
+  </button>
+</div>

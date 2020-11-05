@@ -1,0 +1,29 @@
+.board-container {
+  .play-info {
+    width: 100%;
+    font-size: 24px;
+    margin: 1vh auto 3vh;
+    display: flex;
+    justify-content: center;
+
+    .won {
+      color: tomato;
+      margin: auto 5px;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 0px;
+
+    app-square {
+      height: 100px;
+    }
+  }
+
+  button {
+    margin: 2vh auto 0;
+    width: 100%;
+  }
+}
