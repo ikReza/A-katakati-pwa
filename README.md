@@ -4,6 +4,8 @@
 
 A tic-tac-toe game build with Angular.
 
+[![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20KataKati%20at)](https://progressiveapp.store/pwa/KataKati)
+
 **Components Structure:** `AppComponent` ▶ `BoardComponent` ▶ `SquareComponent`
 
 > What's in BoardComponent?
